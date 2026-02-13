@@ -7,6 +7,10 @@ Key Features
 •	Switch node layout optimization
 •	Tight input loop placement
 •	Proper feedback routing and test points (SW, FB, VIN)
+•	Short switching loops
+•	Feedback isolation
+•	Clear grounding strategy
+•	Debug-friendly layout
 
 Hardware Design
 •   Custom 12V → 5V buck converter using the LMR51430  
