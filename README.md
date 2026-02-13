@@ -2,6 +2,7 @@
 
 Custom LMR51430 buck converter PCB (12V → 5V @ ~3A)
 Hands-on power board focused on real layout, not just theory
+This board was designed with real-world debugging and manufacturability in mind rather than minimum size alone
 
 Key Features
 •	Switch node layout optimization
@@ -21,10 +22,10 @@ Hardware Design
 •   Output Filtering: 47µF bulk + local decoupling  
 •   Input Decoupling: 10µF + 0.1µF placed close to VIN  
 
-•   Layout Priorities:
-    •   Tight high-current loop (VIN → SW → L → Cout → GND)  
-    •   Short switch node to reduce noise  
-    •   Solid ground reference for stability  
-    •   Dedicated test points (VIN, SW, FB, EN, 5V)  
-
+Layout Priorities:
+•   Tight high-current loop (VIN → SW → L → Cout → GND)  
+•   Short switch node to reduce noise  
+•   Solid ground reference for stability  
+•   Dedicated test points (VIN, SW, FB, EN, 5V)  
+    
 Designed and engineered by Brandon Shelly
