@@ -24,4 +24,3 @@ Hardware Design
     •   Dedicated test points (VIN, SW, FB, EN, 5V)  
 
 Designed and engineered by Brandon Shelly
-Portfolio Hardware Project
