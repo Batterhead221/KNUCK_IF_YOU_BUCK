@@ -725,6 +725,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -1408,7 +1558,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "LMR51430 Buck Converter 12V → 5V @ ~3A"
+	(text_box "LMR51430 Buck Converter 12V → 5V @ ~0.5A-1A"
 		(exclude_from_sim no)
 		(at 114.3 68.58 0)
 		(size 29.21 7.62)
@@ -1508,6 +1658,12 @@
 		(uuid "98c6aaaa-675c-4506-898d-973e74a5d8ae")
 	)
 	(junction
+		(at 160.02 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a24d541a-b1fb-4f24-8841-f2ffd764d77d")
+	)
+	(junction
 		(at 140.97 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1518,6 +1674,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a95bb393-5d5c-48cc-bfde-c80665dbcdf4")
+	)
+	(junction
+		(at 160.02 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdae35e3-5949-4f07-9aac-31e067d7c605")
 	)
 	(junction
 		(at 120.65 91.44)
@@ -1548,6 +1710,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe1b1603-921b-4555-a1c9-36439dcbe182")
+	)
+	(wire
+		(pts
+			(xy 160.02 115.57) (xy 184.15 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024d3a9c-1c75-4462-a37b-560e100ef5e5")
+	)
+	(wire
+		(pts
+			(xy 160.02 85.09) (xy 158.75 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "056358a1-0a32-4918-a2b9-25bf107bada0")
 	)
 	(wire
 		(pts
@@ -1648,6 +1830,26 @@
 			(type default)
 		)
 		(uuid "24bea92d-b477-4fe4-a62a-f788bf32bfcd")
+	)
+	(wire
+		(pts
+			(xy 160.02 99.06) (xy 160.02 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "270b1142-36d9-4982-9349-50e861d955bb")
+	)
+	(wire
+		(pts
+			(xy 160.02 85.09) (xy 160.02 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a0bc7ca-2e59-4105-b30e-501880b3f5fa")
 	)
 	(wire
 		(pts
@@ -1861,7 +2063,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 85.09) (xy 158.75 85.09)
+			(xy 161.29 85.09) (xy 160.02 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2031,7 +2233,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 115.57) (xy 184.15 115.57)
+			(xy 140.97 115.57) (xy 160.02 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3168,6 +3370,76 @@
 			(project "BUCK_CONVERTER_BOARD_V1"
 				(path "/1fd95d44-98eb-480b-b5dd-6f6a0dbc39cb"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 160.02 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a502d4e9-67f2-45f6-800e-35388d6c1986")
+		(property "Reference" "D1"
+			(at 162.56 93.6624 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 162.56 96.2024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36966306-c65e-42a7-8261-df89a6493f42")
+		)
+		(pin "2"
+			(uuid "46050743-4596-4966-b33b-4e4fc4c6419b")
+		)
+		(instances
+			(project ""
+				(path "/1fd95d44-98eb-480b-b5dd-6f6a0dbc39cb"
+					(reference "D1")
 					(unit 1)
 				)
 			)

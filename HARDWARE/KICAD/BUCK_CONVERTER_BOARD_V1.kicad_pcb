@@ -7232,18 +7232,6 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "(3A_PEAK)"
-		(at 105.5 81.774895 180)
-		(layer "B.SilkS")
-		(uuid "a5f90381-2b5a-4fe6-9793-fa1a63e03274")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
-			)
-			(justify left bottom mirror)
-		)
-	)
 	(gr_text "12V-5V_BUCK"
 		(at 97.25 83 90)
 		(layer "B.SilkS")
@@ -7257,20 +7245,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "5V_BUCK:"
-		(at 99.75 92.75 180)
-		(layer "B.SilkS")
-		(uuid "eb0aa407-be03-401b-af31-4f02df61e5f0")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
-			)
-			(justify left bottom mirror)
-		)
-	)
-	(gr_text "2A_CONTINUOUS"
-		(at 108.75 95.25 0)
+	(gr_text "~0.5-1A"
+		(at 107.034656 95.226176 0)
 		(layer "B.SilkS")
 		(uuid "fedf51da-179b-4bf5-b7a6-e89c9c0a1ff6")
 		(effects

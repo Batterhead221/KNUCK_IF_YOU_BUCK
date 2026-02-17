@@ -1,6 +1,6 @@
 # KNUCK_IF_YOU_BUCK
 
-Custom LMR51430 buck converter PCB (12V → 5V @ ~3A)
+Custom LMR51430 buck converter PCB (12V → 5V @ ~0.5A-1A)
 Hands-on power board focused on real layout, not just theory
 This board was designed with real-world debugging and manufacturability in mind rather than minimum size alone
 
@@ -16,7 +16,7 @@ Key Features
 Hardware Design
 •   Custom 12V → 5V buck converter using the LMR51430  
 •   Input: 12V  
-•   Output: 5V (~3A target)  
+•   Output: 5V (~0.5A-1A target)  
 •   Inductor: 10µH power stage  
 •   Feedback Divider: 100k / 20k (sets 5V output)  
 •   Output Filtering: 47µF bulk + local decoupling  
