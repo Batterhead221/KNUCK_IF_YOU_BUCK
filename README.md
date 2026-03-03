@@ -1,31 +1,29 @@
-# KNUCK_IF_YOU_BUCK
+KNUCK_IF_YOU_BUCK
 
-Custom LMR51430 buck converter PCB (12V → 5V @ ~0.5A-1A)
-Hands-on power board focused on real layout, not just theory
-This board was designed with real-world debugging and manufacturability in mind rather than minimum size alone
+Custom LMR51430 buck converter PCB (12V → 5V @ ~0.5A, designed with ~1A headroom).
 
-Key Features
-•	Switch node layout optimization
-•	Tight input loop placement
-•	Proper feedback routing and test points (SW, FB, VIN)
-•	Short switching loops
-•	Feedback isolation
-•	Clear grounding strategy
-•	Debug-friendly layout
+TEST BOARD - NO FAB
 
-Hardware Design
-•   Custom 12V → 5V buck converter using the LMR51430  
-•   Input: 12V  
-•   Output: 5V (~0.5A-1A target)  
-•   Inductor: 10µH power stage  
-•   Feedback Divider: 100k / 20k (sets 5V output)  
-•   Output Filtering: 47µF bulk + local decoupling  
-•   Input Decoupling: 10µF + 0.1µF placed close to VIN  
+Key features
+	•	Optimized SW node geometry
+	•	Tight input loop placement (VIN decoupling kept close)
+	•	Clean feedback routing with isolation from noisy nodes
+	•	Short switching loops for better EMI behavior
+	•	Clear grounding strategy (return paths kept compact)
+	•	Debug-friendly access (VIN, SW, FB, EN, 5V)
 
-Layout Priorities:
-•   Tight high-current loop (VIN → SW → L → Cout → GND)  
-•   Short switch node to reduce noise  
-•   Solid ground reference for stability  
-•   Dedicated test points (VIN, SW, FB, EN, 5V)  
+Hardware design
+	•	Converter: TI LMR51430
+	•	Input: 12V
+	•	Output: 5V (target 0.5A, with ~1A headroom)
+	•	Inductor: 6.8µH power inductor (500 kHz design choice)
+	•	Feedback divider: 100k / 13.7k (sets 5V output)
+	•	Output caps: 2×22µF + local decoupling
+	•	Input caps: 22µF + 0.1µF placed close to VIN/GND 
+
+Layout priorities
+	•	Tight high-current loop: VIN → SW → L → COUT → GND
+	•	Keep SW copper small (short + compact)
+	•	Solid ground reference near power stage
     
 Designed and engineered by Brandon Shelly
